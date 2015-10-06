@@ -26,5 +26,15 @@ namespace RestaurantManager
         {
             this.InitializeComponent();
         }
+
+        private void ButtonClear_Handler(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Home_Handler(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

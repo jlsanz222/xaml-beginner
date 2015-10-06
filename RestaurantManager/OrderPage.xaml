@@ -7,28 +7,32 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-279,0">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-688,0">
         <Grid.RowDefinitions>
-            <RowDefinition Height="160" />
-            <RowDefinition Height="60" />
-            <RowDefinition Height="300" />
-            <RowDefinition Height="60" />
-            <RowDefinition Height="60" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="320"/>
-            <ColumnDefinition Width="160"/>
-            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="2.5*"/>
+            <ColumnDefinition Width="2.5*"/>
 
         </Grid.ColumnDefinitions>
+        <CommandBar Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3">
+            <AppBarButton Icon="Home" Label="Home" Click="Home_Handler" />
+        </CommandBar>
 
-
+        <ListView Grid.Column="0" Grid.Row="1" Grid.RowSpan="2"/>
+        <ListView Grid.Column="2" Grid.Row="2" Grid.RowSpan="2"/>
 
         <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">Special Requests:</TextBlock>
         <TextBlock Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">Order Items:</TextBlock>
 
-        <TextBlock Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" >** Add to Orders **</TextBlock>
-        <TextBlock Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center">** Submit Order **</TextBlock>
+        <Button Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Add to Orders" Click="ButtonAddOrders_Handler"/>
+        <Button Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Submit Order" Click="ButtonSubmitOrder_Handler"/>
 
     </Grid>
 </Page>

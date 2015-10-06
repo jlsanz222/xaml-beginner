@@ -26,5 +26,16 @@ namespace RestaurantManager
         {
             this.InitializeComponent();
         }
+
+        private async void ButtonOrdersView_Handler(object sender, RoutedEventArgs e)
+        {
+           // await new Windows.UI.Popups.MessageDialog("You clicked me!").ShowAsync();
+        
+    }
+        private async void ButtonSubmitOrders_Handler(object sender, RoutedEventArgs e)
+        {
+           /// await new Windows.UI.Popups.MessageDialog("You clicked me!").ShowAsync();
+            
+        }
     }
 }

@@ -26,5 +26,20 @@ namespace RestaurantManager
         {
             this.InitializeComponent();
         }
+
+        private void ButtonSubmitOrder_Handler(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ButtonAddOrders_Handler(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Home_Handler(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
