@@ -29,17 +29,17 @@ namespace RestaurantManager
 
         private void ButtonSubmitOrder_Handler(object sender, RoutedEventArgs e)
         {
-this.Frame.Navigate(typeof(ExpeditePage));
+        this.Frame.Navigate(typeof(ExpeditePage));
         }
 
         private void ButtonAddOrders_Handler(object sender, RoutedEventArgs e)
         {
-this.Frame.Navigate(typeof(OrderPage));
+        this.Frame.Navigate(typeof(OrderPage));
         }
 
         private void Home_Handler(object sender, RoutedEventArgs e)
         {
-this.Frame.Navigate(typeof(MainPage));
+        this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

@@ -7,24 +7,27 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" Width="636.61">
 
+
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     
         <Grid.RowDefinitions>
-            <RowDefinition Height="9*" />
+            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="8*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="640"/>
             
         </Grid.ColumnDefinitions>
-            
-        <CommandBar Grid.Column="0" Grid.Row="0">
-            <AppBarButton Icon="Home" Label="Home" Click="Home_Handler" />
-        </CommandBar>
 
-        <ListView Grid.Row="0" Grid.Column="0"></ListView>
-        <Button Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Clear All Orders" Click="ButtonClear_Handler"/>
+        <AppBar Grid.Column="0" Grid.Row="0">
+            <AppBarButton Icon="Home" Label="HomeB" Click="HomeB_Handler" />
+        </AppBar>
 
-        
+        <ListView Grid.Row="1" Grid.Column="0"></ListView>
+        <Button Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Clear All Orders" Click="ButtonClear_Handler"/>
+     
+
     </Grid>
 </Page>

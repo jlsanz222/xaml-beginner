@@ -29,12 +29,12 @@ namespace RestaurantManager
 
         private void ButtonClear_Handler(object sender, RoutedEventArgs e)
         {
-this.Frame.Navigate(typeof(ExpeditePage));
+
         }
 
-        private void Home_Handler(object sender, RoutedEventArgs e)
+        private void HomeB_Handler(object sender, RoutedEventArgs e)
         {
-this.Frame.Navigate(typeof(MainPage));
+        this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

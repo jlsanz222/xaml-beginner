@@ -29,12 +29,10 @@ namespace RestaurantManager
 
         private async void ButtonOrdersView_Handler(object sender, RoutedEventArgs e)
         {
-           // await new Windows.UI.Popups.MessageDialog("You clicked me!").ShowAsync();
         this.Frame.Navigate(typeof(ExpeditePage));
     }
         private async void ButtonSubmitOrders_Handler(object sender, RoutedEventArgs e)
         {
-           /// await new Windows.UI.Popups.MessageDialog("You clicked me!").ShowAsync();
             this.Frame.Navigate(typeof(OrderPage));
 
         }
