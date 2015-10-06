@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -29,12 +29,12 @@ namespace RestaurantManager
 
         private void ButtonClear_Handler(object sender, RoutedEventArgs e)
         {
-
+this.Frame.Navigate(typeof(ExpeditePage));
         }
 
         private void Home_Handler(object sender, RoutedEventArgs e)
         {
-
+this.Frame.Navigate(typeof(MainPage));
         }
     }
 }
