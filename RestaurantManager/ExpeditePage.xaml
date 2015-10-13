@@ -33,7 +33,7 @@
        
 
 
-        <ListView Grid.Row="1" Grid.Column="0"  x:Name="ListView1" ItemsSource="{Binding OrderItems}"></ListView>
+        <GridView Grid.Row="1" Grid.Column="0"  x:Name="GridView1" ItemsSource="{Binding OrderItems}"></GridView>
         <Button Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Clear All Orders" Click="ButtonClear_Handler"/>
      
 
