@@ -5,27 +5,35 @@
     xmlns:local="using:RestaurantManager"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Width="636.61">
+    xmlns:data="using:RestaurantManager.Models"
+    mc:Ignorable="d">
 
+    <Page.DataContext>
+
+        <data:DataManager/>
+        
+    </Page.DataContext>
 
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     
         <Grid.RowDefinitions>
-            <RowDefinition Height="0.5*" />
+            <RowDefinition Height="1*" />
             <RowDefinition Height="8*" />
             <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="640"/>
-            
+            <ColumnDefinition Width="10*"/>            
         </Grid.ColumnDefinitions>
 
-        <AppBar Grid.Column="0" Grid.Row="0">
-            <AppBarButton Icon="Home" Label="HomeB" Click="HomeB_Handler" />
+        <AppBar>
+            <AppBarButton Icon="Home" Label="Home" Click="HomeB_Handler" />
         </AppBar>
 
-        <ListView Grid.Row="1" Grid.Column="0"></ListView>
+       
+
+
+        <ListView Grid.Row="1" Grid.Column="0"  x:Name="ListView1" ItemsSource="{Binding OrderItems}"></ListView>
         <Button Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Clear All Orders" Click="ButtonClear_Handler"/>
      
 

@@ -5,7 +5,16 @@
     xmlns:local="using:RestaurantManager"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
+    xmlns:data="using:RestaurantManager.Models"
     mc:Ignorable="d">
+
+    <Page.DataContext>
+
+        <data:DataManager/>
+
+    </Page.DataContext>
+
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -22,15 +31,15 @@
 
         </Grid.ColumnDefinitions>
         
-        <AppBar Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Height="50" >
+        <AppBar Grid.ColumnSpan="3">
             <AppBarButton Icon="Home" Label="Home" Click="Home_Handler"/>
         </AppBar>
 
-        <ListView Grid.Column="0" Grid.Row="1" Grid.RowSpan="2"/>
-        <ListView Grid.Column="2" Grid.Row="2" Grid.RowSpan="2"/>
-
-        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center">Special Requests:</TextBlock>
-        <TextBlock Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Center">Order Items:</TextBlock>
+        <ListView Grid.Column="0" Grid.Row="1" Grid.RowSpan="2"  x:Name="ListView2" ItemsSource="{Binding MenuItems}"/>
+        <ListView Grid.Column="2" Grid.Row="2" Grid.RowSpan="2" x:Name="ListView3" ItemsSource="{Binding CurrentlySelectedMenuItems}"/>
+        
+        <TextBlock Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Left">Special Requests:</TextBlock>
+        <TextBlock Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" HorizontalAlignment="Left">Order Items:</TextBlock>
 
         <Button Grid.Row="4" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Add to Orders" Click="ButtonAddOrders_Handler"/>
         <Button Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Submit Order" Click="ButtonSubmitOrder_Handler"/>

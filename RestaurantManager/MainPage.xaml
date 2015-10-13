@@ -5,7 +5,7 @@
     xmlns:local="using:RestaurantManager"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d" Width="645.151">
+    mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"  >
         <Grid.RowDefinitions>
@@ -20,7 +20,7 @@
         </Grid.ColumnDefinitions>
 
         
-            <TextBlock x:Name="SampleControl" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center">Restaurant Manager</TextBlock>
+            <TextBlock x:Name="SampleControl" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center" Text="Restaurant Manager" />
 
             <TextBlock FontSize="20" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" HorizontalAlignment="Center">Internal Test Version</TextBlock>
 
